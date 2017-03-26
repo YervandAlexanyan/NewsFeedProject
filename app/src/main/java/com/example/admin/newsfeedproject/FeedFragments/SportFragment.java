@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject;
+package com.example.admin.newsfeedproject.FeedFragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,14 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Admin on 3/25/2017.
- */
+import com.example.admin.newsfeedproject.R;
 
-public class FavoriteFragment extends Fragment {
+
+public class SportFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.favorite_fragment,container,false);
+        return inflater.inflate(R.layout.sport_fragment,container,false);
     }
 }
