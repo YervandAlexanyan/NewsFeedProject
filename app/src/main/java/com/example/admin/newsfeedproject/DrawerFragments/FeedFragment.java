@@ -11,8 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.admin.newsfeedproject.FeedFragments.NewsFragment;
-import com.example.admin.newsfeedproject.FeedFragments.OtherFragment;
+import com.example.admin.newsfeedproject.FeedFragments.ArtFragment;
+import com.example.admin.newsfeedproject.FeedFragments.PoliticalFragment;
+import com.example.admin.newsfeedproject.FeedFragments.WeatherFragment;
 import com.example.admin.newsfeedproject.R;
 import com.example.admin.newsfeedproject.FeedFragments.SportFragment;
 
@@ -37,15 +38,22 @@ public class FeedFragment extends Fragment {
         setupViewPager(viewPager);
         tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+        setupTabIcons();
 
     }
-
+    private void setupTabIcons() {
+        tabLayout.getTabAt(0).setIcon(R.drawable.news_icon);
+        tabLayout.getTabAt(1).setIcon(R.drawable.sport_icon);
+        tabLayout.getTabAt(2).setIcon(R.drawable.weather_icon);
+        tabLayout.getTabAt(3).setIcon(R.drawable.art_icon);
+    }
     private void setupViewPager(ViewPager viewPager)
     {
         FeedPagerAdapter adapter = new FeedPagerAdapter(getFragmentManager());
-        adapter.addFragment(new NewsFragment(),"News");
+        adapter.addFragment(new PoliticalFragment(),"Political");
         adapter.addFragment(new SportFragment(),"Sport");
-        adapter.addFragment(new OtherFragment(),"Other");
+        adapter.addFragment(new WeatherFragment(),"Weather");
+        adapter.addFragment(new ArtFragment(),"Art");
         viewPager.setAdapter(adapter);
     }
 

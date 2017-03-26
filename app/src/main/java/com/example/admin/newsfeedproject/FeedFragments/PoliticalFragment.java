@@ -10,10 +10,10 @@ import android.view.ViewGroup;
 import com.example.admin.newsfeedproject.R;
 
 
-public class NewsFragment extends Fragment {
+public class PoliticalFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.news_fragment,container,false);
+        return inflater.inflate(R.layout.political_fragment,container,false);
     }
 }
