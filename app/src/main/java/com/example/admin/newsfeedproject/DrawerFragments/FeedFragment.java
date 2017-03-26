@@ -16,7 +16,7 @@ import com.example.admin.newsfeedproject.FeedFragments.PoliticalFragment;
 import com.example.admin.newsfeedproject.FeedFragments.WeatherFragment;
 import com.example.admin.newsfeedproject.R;
 import com.example.admin.newsfeedproject.FeedFragments.SportFragment;
-import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
+
 
 import java.util.ArrayList;
 import java.util.List;
