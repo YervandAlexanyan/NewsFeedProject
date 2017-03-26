@@ -3,6 +3,8 @@ package com.example.admin.newsfeedproject;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,7 +16,7 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+private NavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(true);
     }
@@ -53,8 +55,39 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
+        Fragment fragment=null;
+        Class fragmentclass;
         int id = item.getItemId();
+           switch (id)
+           {
+               case R.id.nav_feed:
+                   fragmentclass=FeedFragment.class;
+                   break;
+               case R.id.nav_gallery:
+                   fragmentclass=GalleryFragment.class;
+                    break;
+               case R.id.nav_video:
+                   fragmentclass=VideoFragment.class;
+                   break;
+               case R.id.nav_favorite:
+                   fragmentclass=FavoriteFragment.class;
+                   break;
+               case R.id.nav_search:
+                   fragmentclass=SearchFragment.class;
+                   break;
+               default:
+                   fragmentclass=FeedFragment.class;
+           }
+        try {
+            fragment = (Fragment) fragmentclass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();
+
+        item.setChecked(true);
 
 
 
