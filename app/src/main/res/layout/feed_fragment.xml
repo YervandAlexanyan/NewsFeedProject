@@ -12,10 +12,11 @@
         android:layout_height="wrap_content"
         app:tabMode="fixed"
         app:tabGravity="fill"/>
-<android.support.v4.view.ViewPager
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/feed_pager">
+    <com.crystalviewpager.widgets.CrystalViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/feed_pager"
+        app:ctl_vp_transition="tablet"></com.crystalviewpager.widgets.CrystalViewPager>
 
-</android.support.v4.view.ViewPager>
+
 </LinearLayout>

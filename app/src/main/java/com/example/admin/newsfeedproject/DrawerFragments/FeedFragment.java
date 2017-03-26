@@ -16,13 +16,14 @@ import com.example.admin.newsfeedproject.FeedFragments.PoliticalFragment;
 import com.example.admin.newsfeedproject.FeedFragments.WeatherFragment;
 import com.example.admin.newsfeedproject.R;
 import com.example.admin.newsfeedproject.FeedFragments.SportFragment;
+import com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class FeedFragment extends Fragment {
-   private ViewPager viewPager;
+    ViewPager viewPager;
     private TabLayout tabLayout;
     @Nullable
     @Override
@@ -30,6 +31,7 @@ public class FeedFragment extends Fragment {
 
         View view=inflater.inflate(R.layout.feed_fragment, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.feed_pager);
+
         setupViewPager(viewPager);
         tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
