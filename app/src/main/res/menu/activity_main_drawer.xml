@@ -2,28 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_feed"
             android:icon="@drawable/nav_feed"
             android:title="NewsFeed" />
+
+
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/nav_photo"
             android:title="Gallery" />
+
+
         <item
             android:id="@+id/nav_video"
-            android:title="Video"
-            android:icon="@drawable/nav_video"/>
+            android:icon="@drawable/nav_video"
+            android:title="Video" />
+
 
         <item
             android:id="@+id/nav_favorite"
             android:icon="@drawable/nav_favorite"
             android:title="Favorite" />
+
         <item
             android:id="@+id/nav_search"
             android:icon="@drawable/nav_search"
             android:title="Search" />
     </group>
-
 
 </menu>

@@ -9,7 +9,10 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
 
 import com.example.admin.newsfeedproject.DrawerFragments.FavoriteFragment;
 import com.example.admin.newsfeedproject.DrawerFragments.FeedFragment;
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.getMenu().getItem(0).setChecked(true);
+
     }
 
     @Override
@@ -56,14 +60,27 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
-        Class fragmentclass;
+        Class fragmentclass = null;
+        boolean t = true;
+
         int id = item.getItemId();
         switch (id) {
+
+
             case R.id.nav_feed:
-                fragmentclass = FeedFragment.class;
+                if (t) {
+                    fragmentclass = FeedFragment.class;
+                    t = false;
+
+                }
+
+
                 break;
+
+
             case R.id.nav_gallery:
                 fragmentclass = GalleryFragment.class;
+
                 break;
             case R.id.nav_video:
                 fragmentclass = VideoFragment.class;
@@ -74,14 +91,13 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_search:
                 fragmentclass = SearchFragment.class;
                 break;
-            default:
-                fragmentclass = FeedFragment.class;
         }
         try {
             fragment = (Fragment) fragmentclass.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.frame, fragment).commit();

@@ -28,19 +28,21 @@ public class FeedFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        return inflater.inflate(R.layout.feed_fragment, container, false);
-    }
-
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
+        View view=inflater.inflate(R.layout.feed_fragment, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.feed_pager);
         setupViewPager(viewPager);
         tabLayout = (TabLayout) view.findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
     }
+
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(R.drawable.news_icon);
         tabLayout.getTabAt(1).setIcon(R.drawable.sport_icon);
@@ -49,11 +51,11 @@ public class FeedFragment extends Fragment {
     }
     private void setupViewPager(ViewPager viewPager)
     {
-        FeedPagerAdapter adapter = new FeedPagerAdapter(getFragmentManager());
+        FeedPagerAdapter adapter = new FeedPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new PoliticalFragment(),"Political");
         adapter.addFragment(new SportFragment(),"Sport");
         adapter.addFragment(new WeatherFragment(),"Weather");
-        adapter.addFragment(new ArtFragment(),"Art");
+        adapter.addFragment(new ArtFragment(),"Culture");
         viewPager.setAdapter(adapter);
     }
 
