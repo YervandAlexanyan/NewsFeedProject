@@ -25,11 +25,12 @@ import java.util.List;
 public class FeedFragment extends Fragment {
     ViewPager viewPager;
     private TabLayout tabLayout;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view=inflater.inflate(R.layout.feed_fragment, container, false);
+        View view = inflater.inflate(R.layout.feed_fragment, container, false);
         viewPager = (ViewPager) view.findViewById(R.id.feed_pager);
 
         setupViewPager(viewPager);
@@ -39,44 +40,43 @@ public class FeedFragment extends Fragment {
         return view;
     }
 
-    @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
-    }
 
     private void setupTabIcons() {
-        tabLayout.getTabAt(0).setIcon(R.drawable.news_icon);
-        tabLayout.getTabAt(1).setIcon(R.drawable.sport_icon);
-        tabLayout.getTabAt(2).setIcon(R.drawable.weather_icon);
-        tabLayout.getTabAt(3).setIcon(R.drawable.art_icon);
+        tabLayout.getTabAt(0).setIcon(R.drawable.news_icon_select);
+        tabLayout.getTabAt(1).setIcon(R.drawable.sport_icon_select);
+        tabLayout.getTabAt(2).setIcon(R.drawable.weather_icon_select);
+        tabLayout.getTabAt(3).setIcon(R.drawable.art_icon_select);
+
+
+
     }
-    private void setupViewPager(ViewPager viewPager)
-    {
+
+    private void setupViewPager(ViewPager viewPager) {
         FeedPagerAdapter adapter = new FeedPagerAdapter(getChildFragmentManager());
-        adapter.addFragment(new PoliticalFragment(),"Political");
-        adapter.addFragment(new SportFragment(),"Sport");
-        adapter.addFragment(new WeatherFragment(),"Weather");
-        adapter.addFragment(new ArtFragment(),"Culture");
+        adapter.addFragment(new PoliticalFragment(), "Political");
+        adapter.addFragment(new SportFragment(), "Sport");
+        adapter.addFragment(new WeatherFragment(), "Weather");
+        adapter.addFragment(new ArtFragment(), "Culture");
         viewPager.setAdapter(adapter);
     }
 
     class FeedPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
-        private final List<String> mFragmentTitleList = new ArrayList<>();
+
         public FeedPagerAdapter(FragmentManager fm) {
             super(fm);
         }
-
 
 
         @Override
         public Fragment getItem(int position) {
             return mFragmentList.get(position);
         }
+
         public void addFragment(Fragment fragment, String title) {
             mFragmentList.add(fragment);
-            mFragmentTitleList.add(title);
+
         }
 
         @Override
@@ -84,9 +84,6 @@ public class FeedFragment extends Fragment {
             return mFragmentList.size();
         }
 
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitleList.get(position);
-        }
+
     }
 }

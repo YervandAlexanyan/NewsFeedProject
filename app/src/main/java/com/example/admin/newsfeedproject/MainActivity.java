@@ -62,26 +62,17 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
         Class fragmentclass = null;
-        boolean t = true;
+
 
         int id = item.getItemId();
         switch (id) {
 
 
             case R.id.nav_feed:
-                if (t) {
-                    fragmentclass = FeedFragment.class;
-
-
-                }
-
-
+                fragmentclass = FeedFragment.class;
                 break;
-
-
             case R.id.nav_gallery:
                 fragmentclass = GalleryFragment.class;
-
                 break;
             case R.id.nav_video:
                 fragmentclass = VideoFragment.class;
