@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Երևան"
+        android:id="@+id/a"
+        app:showAsAction="never" />
+    <item
+        android:title="Արագածոտն"
+        app:showAsAction="never"
+        android:id="@+id/b"
+        />
+    <item
+        android:title="Արարատ‎‎"
+        app:showAsAction="never"
+        android:id="@+id/c"
+        />
+
+    <item
+        android:title="Արմավիր‎‎"
+        app:showAsAction="never"
+        android:id="@+id/d"
+        />
+
+    <item
+        android:title="Գեղարքունիք"
+        app:showAsAction="never"
+        android:id="@+id/e"
+        />
+
+    <item
+        android:title="Լոռի"
+        app:showAsAction="never"
+        android:id="@+id/f"
+        />
+
+    <item
+        android:title="Կոտայք"
+        app:showAsAction="never"
+        android:id="@+id/g"
+        />
+
+    <item
+        android:title="Շիրակ"
+        app:showAsAction="never"
+        android:id="@+id/m"
+        />
+
+    <item
+        android:title="Սյունիք"
+        app:showAsAction="never"
+        android:id="@+id/n"
+        />
+    <item
+        android:title="Վայոց ձոր"
+        app:showAsAction="never"
+        android:id="@+id/l"
+        />
+    <item
+        android:title="Տավուշ‎"
+        app:showAsAction="never"
+        android:id="@+id/o"
+        />
+
+
+</menu>
