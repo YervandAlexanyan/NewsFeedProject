@@ -19,7 +19,6 @@ import android.widget.TextView;
 
 import com.example.admin.newsfeedproject.FeedRecylerView.GalleryAdapter;
 import com.example.admin.newsfeedproject.R;
-import com.github.ivbaranov.mfb.MaterialFavoriteButton;
 
 import java.util.ArrayList;
 import java.util.List;

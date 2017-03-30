@@ -5,8 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.admin.newsfeedproject.GalleryActivity">
-             <ImageView
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:id="@+id/image_item"/>
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        android:id="@+id/gallery_favorite"
+        android:layout_alignParentBottom="true"/>
+
 </RelativeLayout>
