@@ -2,8 +2,10 @@ package com.example.admin.newsfeedproject.FeedRecylerView;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.RecyclerView;
@@ -39,15 +41,17 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
 
     @Override
     public void onBindViewHolder(final NewsViewHolder holder, int position) {
-        News news = newsList.get(position);
+        final News news = newsList.get(position);
         Picasso.with(context).load(news.getImage()).resize(130, 130).into(holder.photo);
         holder.name.setText(news.getName());
         holder.title.setText(news.getTitle());
         holder.source.setText(news.getSource());
         holder.name.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(news.getUrl()));
+                context.startActivity(intent);
             }
         });
         holder.favorite.setOnClickListener(new View.OnClickListener() {
