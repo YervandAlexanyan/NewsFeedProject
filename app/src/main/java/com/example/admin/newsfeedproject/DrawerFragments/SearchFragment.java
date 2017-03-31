@@ -9,9 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.admin.newsfeedproject.R;
 
-/**
- * Created by Admin on 3/25/2017.
- */
+
 
 public class SearchFragment extends Fragment {
     @Nullable

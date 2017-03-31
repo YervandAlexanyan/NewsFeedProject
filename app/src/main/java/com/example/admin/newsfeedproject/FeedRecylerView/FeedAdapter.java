@@ -99,5 +99,6 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
             source=(TextView)itemView.findViewById(R.id.source);
             favorite=(ImageView)itemView.findViewById(R.id.favortie);
         }
+
     }
 }

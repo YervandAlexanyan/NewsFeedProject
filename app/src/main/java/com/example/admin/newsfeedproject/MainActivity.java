@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.getMenu().getItem(0).setChecked(true);
+        navigationView.setVerticalScrollBarEnabled(false);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
@@ -39,10 +43,7 @@ public class MainActivity extends AppCompatActivity
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-        navigationView.getMenu().getItem(0).setChecked(true);
-        navigationView.setVerticalScrollBarEnabled(false);
+
 
     }
 
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Fragment fragment = null;
-        Class fragmentclass = null;
+
 
 
         int id = item.getItemId();
@@ -69,26 +70,22 @@ public class MainActivity extends AppCompatActivity
 
 
             case R.id.nav_feed:
-                fragmentclass = FeedFragment.class;
+                fragment=new FeedFragment();
                 break;
             case R.id.nav_gallery:
-                fragmentclass = GalleryFragment.class;
+                fragment=new GalleryFragment();
                 break;
             case R.id.nav_video:
-                fragmentclass = VideoFragment.class;
+                fragment=new VideoFragment();
                 break;
             case R.id.nav_favorite:
-                fragmentclass = FavoriteFragment.class;
+                fragment=new FavoriteFragment();
                 break;
             case R.id.nav_search:
-                fragmentclass = SearchFragment.class;
+                fragment=new SearchFragment();
                 break;
         }
-        try {
-            fragment = (Fragment) fragmentclass.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
