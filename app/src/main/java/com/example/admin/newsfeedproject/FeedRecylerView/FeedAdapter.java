@@ -12,6 +12,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -36,6 +38,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
     public NewsViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.view_item, parent, false);
         NewsViewHolder newsViewHolder = new NewsViewHolder(view);
+
         return newsViewHolder;
     }
 
@@ -46,6 +49,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
         holder.name.setText(news.getName());
         holder.title.setText(news.getTitle());
         holder.source.setText(news.getSource());
+
         holder.name.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -54,6 +58,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
                 context.startActivity(intent);
             }
         });
+
         holder.favorite.setOnClickListener(new View.OnClickListener() {
             private boolean toggle=false;
             @Override
@@ -62,6 +67,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
                 {
                     holder.favorite.setBackgroundResource(R.drawable.ic_favorite_border_black_24dp);
                     toggle=false;
+
                 }else
                 {
                     holder.favorite.setBackgroundResource(R.drawable.favorite_two);
@@ -70,6 +76,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
 
             }
         });
+
     }
 
     @Override

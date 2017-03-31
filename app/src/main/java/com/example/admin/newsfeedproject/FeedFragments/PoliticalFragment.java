@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.OvershootInterpolator;
 
 import com.example.admin.newsfeedproject.FeedRecylerView.FeedAdapter;
 import com.example.admin.newsfeedproject.FeedRecylerView.News;
@@ -18,6 +19,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+
+
 
 
 public class PoliticalFragment extends Fragment {
@@ -47,6 +50,7 @@ public class PoliticalFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter = new FeedAdapter(setData(), getContext());
         recyclerView.setAdapter(adapter);
+
         return view;
     }
 
