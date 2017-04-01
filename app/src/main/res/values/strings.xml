@@ -3,6 +3,160 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-
     <string name="action_settings">Settings</string>
+
+    <string-array name="politicalurls">
+        <item>http://edition.cnn.com/2017/03/29/politics/russia-investigation-cast-of-characters/index.html</item>
+        <item>http://edition.cnn.com/2017/03/30/politics/putin-russia-us-election-denial/index.html</item>
+        <item>http://www.telegraph.co.uk/news/2017/03/30/francois-hollande-tells-mrs-may-will-frustrate-hopes-swift-brexit/</item>
+        <item>http://www.telegraph.co.uk/news/2017/03/30/ken-livingstone-faces-expulsion-labour-party-appears-misconduct/</item>
+        <item>http://www.bbc.com/news/world-europe-39412077</item>
+        <item>http://www.bbc.com/news/uk-politics-36785814</item>
+        <item>http://www.nbcnews.com/news/world/xi-trump-meeting-china-announces-date-key-meeting-president-n740436</item>
+        <item>http://www.lifedaily.com/story/17-most-stunning-melania-trump-photos-on-the-web/source/taboola/?utm_taboola_id=467399utm_source=taboola#utm_medium=referralutm_source=taboolautm_campaign=TB-INTL2-MelaniaPhotos</item>
+
+
+    </string-array>
+    <string-array name="politicalnames">
+        <item>Whos who in Trump-Russia saga</item>
+        <item>Putin slams US election meddling claims as lies</item>
+        <item>French president Francois Hollande tells Theresa May he will frustrate her hopes of a swift Brexit deal</item>
+        <item>Ken Livingstone embroiled in new Hitler row after saying Zionists collaborated with Nazis</item>
+        <item>Turkey referendum: The ultranationalists who could sway Erdogan vote</item>
+        <item>Theresa Mays cabinet: Whos in and whos out?</item>
+        <item>Xi-Trump Summit: China Announces Date of Key Meeting With U.S. President</item>
+        <item>17 Photos Of Melania That Donald Has Kept Secret</item>
+
+
+    </string-array>
+    <string-array name="politacalsources">
+        <item>CNN</item>
+        <item>CNN</item>
+        <item>The Telegraph</item>
+        <item>The Telegraph</item>
+        <item>BBC</item>
+        <item>BBC</item>
+        <item>NBCNEWS</item>
+        <item>LifeDaily</item>
+
+    </string-array>
+    <string-array name="politicaltitles">
+        <item>Several US lawmakers and agency heads have emerged as visible, and at times controversial, figures in the investigations into connections between individuals in Trumps orbit and Russian hacking of Democratic Party groups including the Democratic National Committee and Clinton campaign adviser John Podesta.</item>
+        <item>Moscow (CNN)Russian President Vladimir Putin has described allegations that his country meddled in the 2016 US election as fictional, illusory, provocations and lies.</item>
+        <item>The French president on Thursday insisted that the terms for Britains withdrawal from the EU must first be agreed before opening negotiations on a trade deal.</item>
+        <item>Speaking outside the hearing, he said: He [Adolf Hitler] didnt just sign the deal, the SS set up training camps so German Jews who were going to go there could be trained to cope with a very different sort of country when they got there.</item>
+        <item>A former interior minister and a high-profile name in Turkish politics for over two decades, 60-year-old Ms Aksener has now emerged as one of the leading figures of the No campaign in Turkeys upcoming referendum and a possible challenger to President Recep Tayyip Erdogan.</item>
+        <item>Theresa May is forming her new government after becoming Conservative prime minister. She is continuing to announce her full cabinet - but heres what we know so far. The list will be updated as new appointments are made.</item>
+        <item>BEIJING — Chinese President Xi Jinping will travel to the United States to meet President Donald Trump at his Mar-a-Lago retreat in Florida on April 6-7, Chinas Foreign Ministry said on Thursday, its first official confirmation of the highly anticipated summit</item>
+        <item>If theres one thing that Donald Trump has gotten attention for, its his wife Melania, an international model from Slovenia whos 24 years his junior…</item>
+
+
+    </string-array>
+    <string-array name="sporturls">
+        <item>http://www.skysports.com/boxing/news/12040/10818268/gabriel-rosado-vows-to-win-ward-gatti-style-war-with-martin-murray</item>
+        <item>http://www.skysports.com/football/news/11835/10818318/cristiano-ronaldo-statue-creator-defends-his-work</item>
+        <item>http://www.skysports.com/football/news/11670/10818492/arsenal-chairman-sir-chips-keswick-coy-on-arsene-wenger-future</item>
+        <item>http://www.bbc.com/sport/basketball/39441465</item>
+        <item>http://www.bbc.com/sport/get-inspired/23143745</item>
+        <item>https://sport.news.am/arm/news/76975/gandzasar-kapany-erevanum-haxtec-alashkertin-ev-havasarvec-arajatarin.html</item>
+        <item>https://sport.news.am/arm/news/76981/mourinyo-spasum-em-ibrahimovichi-oroshmany.html</item>
+        <item>https://sport.news.am/arm/news/76977/holandiayi-futbolayin-miutyuny-banakcum-evan-gali-het.html</item>
+    </string-array>
+    <string-array name="sportnames">
+        <item>Gabriel Rosado vows to win Ward-Gatti style war with Martin Murray</item>
+        <item>Cristiano Ronaldo statue creator defends his work</item>
+        <item>Arsenal chairman Sir Chips Keswick coy on Arsene Wenger future</item>
+        <item>Russell Westbrook makes NBA history with triple-double high score</item>
+        <item>Get Inspired: How to get into Basketball</item>
+        <item>«Գանձասար-Կապանը» Երեւանում հաղթեց «Ալաշկերտին» եւ հավասարվեց առաջատարին</item>
+        <item>Մոուրինյո. Սպասում եմ Իբրահիմովիչի որոշմանը</item>
+        <item>Հոլանդիայի ֆուտբոլային միությունը բանակցում է Վան Գալի հետ</item>
+
+    </string-array>
+    <string-array name="sportsources">
+        <item>SkySprots</item>
+        <item>SkySprots</item>
+        <item>SkySprots</item>
+        <item>BBC Sport</item>
+        <item>BBC Sport</item>
+        <item>News.am</item>
+        <item>News.am</item>
+        <item>News.am</item>
+
+    </string-array>
+    <string-array name="sporttitles">
+        <item>The Philadelphia middleweight will fight in the United Kingdom for the first time on April 22, topping the bill in Liverpool, live on Sky Sports.</item>
+        <item>The airport in Ronaldos home town of Funchal was renamed in the Portugal captains honour on Wednesday. It will now be known as Aeroporto Cristiano Ronaldo.</item>
+        <item>Keswick did not give much away on whether he thinks the Frenchman will be at the Emirates next season in a rare interview as he left a Premier League meeting in central London</item>
+        <item>Oklahoma City Thunders Russell Westbrook made the highest scoring triple-double in NBA history as his side beat Orlando Magic 114-106.</item>
+        <item>More than 300,000 people are estimated to play basketball each month in the United Kingdom. All you need is a ball and hoop and there are thousands of outdoor courts across the country where you can play for free, so what are you waiting for?</item>
+        <item>Ֆուտբոլի Հայաստանի Բարձրագույն խմբի 21-րդ տուրի մեկնարկային խաղում առաջատար «Ալաշկերտն» ընդունեց «Գանձասար-Կապանին» եւ պարտվեց 1։2 հաշվով: Կապանցիների առաջին գոլը խփեց Գեղամ Հարությունյանը, որն 9 գոլով հավասարվեց ռմբարկուների ցուցակը գլխավորող Միհրան Մանասյանին («Ալաշկերտ»)։</item>
+        <item>Անգլիական «Մանչեսթեր Յունայթեդի» պորտուգալացի գլխավոր մարզիչ Ժոզե Մոուրինյոն հայտարարել է, որ ինչ որոշում էլ ընդունի Զլատան Իբրահիմովիչը կարիերայի հետագայի վերաբերյալ, ինքը կհարգի:</item>
+        <item>Հոլանդիայի ֆուտբոլային միությունը բանակցություններ է սկսել հոլանդացի հայտնի մասնագետ Լուի վան Գալի հետ, հայտնում է Reuters-ը։</item>
+
+    </string-array>
+    <string-array name="arturls">
+        <item>http://www.bbc.com/culture/story/20170324-the-man-with-the-green-face</item>
+        <item>http://www.bbc.com/culture/story/20170324-how-to-look-at-a-work-of-art</item>
+        <item>https://www.theguardian.com/books/2017/mar/30/in-our-google-era-indexers-are-the-unsung-heroes-of-the-publishing-world</item>
+        <item>http://www.today.com/popculture/adele-elmo-celebrity-friendship-we-ve-been-waiting-t109136</item>
+        <item>http://www.aravot.am/2017/03/30/872386/</item>
+        <item>http://tvkultura.ru/article/show/article_id/172108/</item>
+        <item>https://www.gazeta.ru/culture/2017/03/30/a_10602749.shtml</item>
+        <item>https://style.news.am/arm/news/39528/eriky-lavaguyn-ergich-tchanachvelu-x-factor-i-ev-adrbejanci-hakerneri-instagram-i-ir-ejy-kotrelu-masin.html</item>
+    </string-array>
+    <string-array name="artnames">
+        <item>After a Russian anti-corruption campaigner appeared to have been sprayed green in a bizarre attack, Kelly Grovier looks at how a colour can be a show of defiance.s</item>
+        <item>How to look at a work of art</item>
+        <item>In our Google era, indexers are the unsung heroes of the publishing world</item>
+        <item>Adele and Elmo is the celebrity friendship weve been waiting for</item>
+        <item>Պեղումներ Շուշիի իրանական մզկիթի տարածքում</item>
+        <item>Пушкинский музей готовит выставку знаменитого художника современности Цая Гоцяна</item>
+        <item>«Побеждают творческие ОПГ, а не узколобые бухгалтеры»</item>
+        <item>Էրիկը` լավագույն երգիչ ճանաչվելու, X Factor-ի եւ ադրբեջանցի հակերների՝ Instagram-ի իր էջը կոտրելու մասին</item>
+
+    </string-array>
+    <string-array name="artsources">
+        <item>BBC</item>
+        <item>BBC</item>
+        <item>TheGuardian</item>
+        <item>today.com</item>
+        <item>aravot.am</item>
+        <item>tvkultura.am</item>
+        <item>gazeta.ru</item>
+        <item>News.am</item>
+
+    </string-array>
+    <string-array name="arttitles">
+        <item>If lust is red, sadness is blue, and cowardice is yellow, what colour defines defiance? An arresting image that emerged this week promises to add a new hue to the symbolic colour-wheel that spins inside us.</item>
+        <item>The ‘Slow Art movement’ is on the rise. Linda Kennedy looks at the ins and outs of ‘eyeball etiquette’.</item>
+        <item>Today, the Society of Indexers – the industry body for those professionals (for which, full disclosure, I have the honour to be honorary president) – turns 60 years old. It celebrates its “anniversary, diamond”. “What?” you ask. “Who?” you wonder. </item>
+        <item>Adele may be officially off the market, but shes still open to new friends. Say hello to the goals-iest celebrity BFFs since Taylor and Karlie ...</item>
+        <item>Պատմական գիտությունների թեկնածու Նժդեհ Երանյանի ղեկավարած հնագիտական արշավախումբն այս օրերին աշխատում է հուշարձանի արևելյան և արևմտյան տապանաբակերում։</item>
+        <item>Огонь и порох Октября. К 100-летию Революции Пушкинский музей готовит первую в стране персональную выставку одного из самых знаменитых современных художников мира. Цай Гоцян – мастер, объединяющий в своем творчестве Восток и Запад, высокое искусство и повседневность, вековые традиции и современные стратегии. Чтобы показать все многообразие арт-практик этого автора, музей превратит свои залы в огромную инсталляцию. Но и этого мало – будут задействованы еще и площадь перед музеем,</item>
+        <item>Продюсеры и режиссеры Иван Капитонов и Святослав Подгаевский рассказали «Газете.Ru» о том, как сделать русский фильм ужасов, а также почему после успеха «Невесты» и «Пиковой дамы» они решили создать собственную кинокомпанию.</item>
+        <item>Փարիզում առաջին անգամ կայացած Armenian Europe Music Awards մրցանակաբաշխության «Տարվա լավագույն երգչի» տիտղոսակիր է դարձել Էրիկը:</item>
+
+    </string-array>
+    <string-array name="days">
+        <item>Երկուշաբթի</item>
+        <item>Երեքշաբթի</item>
+        <item>Չորեքշաբթի</item>
+        <item>Հինգշաբթի</item>
+        <item>Ուրբաթ</item>
+        <item>Շաբաթ</item>
+        <item>Կիրակի</item>
+
+    </string-array>
+    <string-array name="gradus">
+        <item>+10</item>
+        <item>+5</item>
+        <item>-3</item>
+        <item>-12</item>
+        <item>-9</item>
+        <item>1</item>
+        <item>+7</item>
+
+    </string-array>
+
 </resources>

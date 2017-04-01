@@ -50,15 +50,20 @@ public class SportFragment extends Fragment {
 
     private List<News> setData() {
         List<News> newsList = new ArrayList<>();
+        String[] urls=getResources().getStringArray(R.array.sporturls);
+        String[] names = getResources().getStringArray(R.array.sportnames);
+        String[] sources = getResources().getStringArray(R.array.sportsources);
+        String[] titles = getResources().getStringArray(R.array.sporttitles);
 
-        newsList.add(new News("http://www.skysports.com/boxing/news/12040/10818268/gabriel-rosado-vows-to-win-ward-gatti-style-war-with-martin-murray",R.drawable.sprotnews3,"Gabriel Rosado vows to win Ward-Gatti style war with Martin Murray","SkySports","The Philadelphia middleweight will fight in the United Kingdom for the first time on April 22, topping the bill in Liverpool, live on Sky Sports."));
-        newsList.add(new News("http://www.skysports.com/football/news/11835/10818318/cristiano-ronaldo-statue-creator-defends-his-work",R.drawable.sprotnews2,"Cristiano Ronaldo statue creator defends his work","SkySports","The airport in Ronaldo's home town of Funchal was renamed in the Portugal captain's honour on Wednesday. It will now be known as Aeroporto Cristiano Ronaldo."));
-        newsList.add(new News("http://www.skysports.com/football/news/11670/10818492/arsenal-chairman-sir-chips-keswick-coy-on-arsene-wenger-future",R.drawable.sprotnews1,"Arsenal chairman Sir Chips Keswick coy on Arsene Wenger future","SkySprots","Keswick did not give much away on whether he thinks the Frenchman will be at the Emirates next season in a rare interview as he left a Premier League meeting in central London"));
-        newsList.add(new News("http://www.bbc.com/sport/basketball/39441465",R.drawable.sportnews4,"Russell Westbrook makes NBA history with triple-double high score","BBC Sport","Oklahoma City Thunder's Russell Westbrook made the highest scoring triple-double in NBA history as his side beat Orlando Magic 114-106."));
-        newsList.add(new News("http://www.bbc.com/sport/get-inspired/23143745",R.drawable.sportnews5,"Get Inspired: How to get into Basketball","BBC Sport","More than 300,000 people are estimated to play basketball each month in the United Kingdom. All you need is a ball and hoop and there are thousands of outdoor courts across the country where you can play for free, so what are you waiting for?"));
-        newsList.add(new News("https://sport.news.am/arm/news/76975/gandzasar-kapany-erevanum-haxtec-alashkertin-ev-havasarvec-arajatarin.html",R.drawable.sportnews6,"«Գանձասար-Կապանը» Երեւանում հաղթեց «Ալաշկերտին» եւ հավասարվեց առաջատարին","News.am","Ֆուտբոլի Հայաստանի Բարձրագույն խմբի 21-րդ տուրի մեկնարկային խաղում առաջատար «Ալաշկերտն» ընդունեց «Գանձասար-Կապանին» եւ պարտվեց 1։2 հաշվով: Կապանցիների առաջին գոլը խփեց Գեղամ Հարությունյանը, որն 9 գոլով հավասարվեց ռմբարկուների ցուցակը գլխավորող Միհրան Մանասյանին («Ալաշկերտ»)։"));
-        newsList.add(new News("https://sport.news.am/arm/news/76981/mourinyo-spasum-em-ibrahimovichi-oroshmany.html",R.drawable.sprotnews7,"Մոուրինյո. Սպասում եմ Իբրահիմովիչի որոշմանը","News.am","Անգլիական «Մանչեսթեր Յունայթեդի» պորտուգալացի գլխավոր մարզիչ Ժոզե Մոուրինյոն հայտարարել է, որ ինչ որոշում էլ ընդունի Զլատան Իբրահիմովիչը կարիերայի հետագայի վերաբերյալ, ինքը կհարգի:"));
-        newsList.add(new News("https://sport.news.am/arm/news/76977/holandiayi-futbolayin-miutyuny-banakcum-evan-gali-het.html",R.drawable.sportnews8,"Հոլանդիայի ֆուտբոլային միությունը բանակցում է Վան Գալի հետ","News.am","Հոլանդիայի ֆուտբոլային միությունը բանակցություններ է սկսել հոլանդացի հայտնի մասնագետ Լուի վան Գալի հետ, հայտնում է Reuters-ը։"));
+
+        newsList.add(new News(urls[0], R.drawable.sprotnews1, names[0], sources[0], titles[0]));
+        newsList.add(new News(urls[1], R.drawable.sprotnews2, names[1], sources[1], titles[1]));
+        newsList.add(new News(urls[2], R.drawable.sprotnews3, names[2], sources[2], titles[2]));
+        newsList.add(new News(urls[3], R.drawable.sportnews4, names[3], sources[3], titles[3]));
+        newsList.add(new News(urls[4], R.drawable.sportnews5, names[4], sources[4], titles[4]));
+        newsList.add(new News(urls[5], R.drawable.sportnews6, names[5], sources[5], titles[5]));
+        newsList.add(new News(urls[6], R.drawable.sprotnews7, names[6], sources[6], titles[6]));
+        newsList.add(new News(urls[7], R.drawable.sportnews8, names[7], sources[7], titles[7]));
         long seed=System.nanoTime();
         Collections.shuffle(newsList,new Random(seed));
         return newsList;

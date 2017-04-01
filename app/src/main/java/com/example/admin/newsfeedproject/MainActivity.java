@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import com.example.admin.newsfeedproject.DrawerFragments.FavoriteFragment;
 import com.example.admin.newsfeedproject.DrawerFragments.FeedFragment;
 import com.example.admin.newsfeedproject.DrawerFragments.GalleryFragment;
-import com.example.admin.newsfeedproject.DrawerFragments.SearchFragment;
+
 import com.example.admin.newsfeedproject.DrawerFragments.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
@@ -81,9 +81,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_favorite:
                 fragment=new FavoriteFragment();
                 break;
-            case R.id.nav_search:
-                fragment=new SearchFragment();
-                break;
+
         }
 
 

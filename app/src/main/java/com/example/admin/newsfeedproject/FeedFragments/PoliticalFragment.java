@@ -21,8 +21,6 @@ import java.util.List;
 import java.util.Random;
 
 
-
-
 public class PoliticalFragment extends Fragment {
     private RecyclerView recyclerView;
     private FeedAdapter adapter;
@@ -57,16 +55,24 @@ public class PoliticalFragment extends Fragment {
 
     private List<News> setData() {
         List<News> newsList = new ArrayList<>();
-        newsList.add(new News("http://edition.cnn.com/2017/03/29/politics/russia-investigation-cast-of-characters/index.html",R.drawable.news1, "Who's who in Trump-Russia saga", "CNN","Several US lawmakers and agency heads have emerged as visible, and at times controversial, figures in the investigations into connections between individuals in Trump's orbit and Russian hacking of Democratic Party groups including the Democratic National Committee and Clinton campaign adviser John Podesta."));
-        newsList.add(new News("http://edition.cnn.com/2017/03/30/politics/putin-russia-us-election-denial/index.html",R.drawable.news2,"Putin slams US election meddling claims as lies", "CNN","Moscow (CNN)Russian President Vladimir Putin has described allegations that his country meddled in the 2016 US election as fictional, illusory, provocations and lies."));
-        newsList.add(new News("http://www.telegraph.co.uk/news/2017/03/30/francois-hollande-tells-mrs-may-will-frustrate-hopes-swift-brexit/",R.drawable.news3,"French president Francois Hollande tells Theresa May he will frustrate her hopes of a swift Brexit deal","The Telegraph","The French president on Thursday insisted that the terms for Britain’s withdrawal from the EU must first be agreed before opening negotiations on a trade deal."));
-        newsList.add(new News("http://www.telegraph.co.uk/news/2017/03/30/ken-livingstone-faces-expulsion-labour-party-appears-misconduct/",R.drawable.news4,"Ken Livingstone embroiled in new Hitler row after saying Zionists collaborated with Nazis","The Telegraph","Speaking outside the hearing, he said: He [Adolf Hitler] didn't just sign the deal, the SS set up training camps so German Jews who were going to go there could be trained to cope with a very different sort of country when they got there."));
-        newsList.add(new News("http://www.bbc.com/news/world-europe-39412077",R.drawable.news6,"Turkey referendum: The ultranationalists who could sway Erdogan vote","BBC","A former interior minister and a high-profile name in Turkish politics for over two decades, 60-year-old Ms Aksener has now emerged as one of the leading figures of the No campaign in Turkey's upcoming referendum and a possible challenger to President Recep Tayyip Erdogan."));
-        newsList.add(new News("http://www.bbc.com/news/uk-politics-36785814",R.drawable.news5,"Theresa May's cabinet: Who's in and who's out?","BBC","Theresa May is forming her new government after becoming Conservative prime minister. She is continuing to announce her full cabinet - but here's what we know so far. The list will be updated as new appointments are made."));
-        newsList.add(new News("http://www.nbcnews.com/news/world/xi-trump-meeting-china-announces-date-key-meeting-president-n740436",R.drawable.news8,"Xi-Trump Summit: China Announces Date of Key Meeting With U.S. President","NBCNEWS","BEIJING — Chinese President Xi Jinping will travel to the United States to meet President Donald Trump at his Mar-a-Lago retreat in Florida on April 6-7, China's Foreign Ministry said on Thursday, its first official confirmation of the highly anticipated summit."));
-        newsList.add(new News("http://www.lifedaily.com/story/17-most-stunning-melania-trump-photos-on-the-web/source/taboola/?utm_taboola_id=467399&utm_source=taboola#utm_medium=referral&utm_source=taboola&utm_campaign=TB-INTL2-MelaniaPhotos",R.drawable.news7,"17 Photos Of Melania That Donald Has Kept Secret","LifeDaily","If there’s one thing that Donald Trump has gotten attention for, it’s his wife Melania, an international model from Slovenia who’s 24 years his junior…"));
-        long seed=System.nanoTime();
-        Collections.shuffle(newsList,new Random(seed));
+        String[] urls = getResources().getStringArray(R.array.politicalurls);
+        String[] names = getResources().getStringArray(R.array.politicalnames);
+        String[] sources = getResources().getStringArray(R.array.politacalsources);
+        String[] titles = getResources().getStringArray(R.array.politicaltitles);
+
+
+        newsList.add(new News(urls[0], R.drawable.news1, names[0], sources[0], titles[0]));
+        newsList.add(new News(urls[1], R.drawable.news2, names[1], sources[1], titles[1]));
+        newsList.add(new News(urls[2], R.drawable.news3, names[2], sources[2], titles[2]));
+        newsList.add(new News(urls[3], R.drawable.news4, names[3], sources[3], titles[3]));
+        newsList.add(new News(urls[4], R.drawable.news5, names[4], sources[4], titles[4]));
+        newsList.add(new News(urls[5], R.drawable.news6, names[5], sources[5], titles[5]));
+        newsList.add(new News(urls[6], R.drawable.news7, names[6], sources[6], titles[6]));
+        newsList.add(new News(urls[7], R.drawable.news8, names[7], sources[7], titles[7]));
+
+
+        long seed = System.nanoTime();
+        Collections.shuffle(newsList, new Random(seed));
         return newsList;
     }
 }
