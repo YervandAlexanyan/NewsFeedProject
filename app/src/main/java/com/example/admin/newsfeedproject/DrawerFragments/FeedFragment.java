@@ -13,7 +13,6 @@ import android.view.ViewGroup;
 
 import com.example.admin.newsfeedproject.FeedFragments.ArtFragment;
 import com.example.admin.newsfeedproject.FeedFragments.PoliticalFragment;
-import com.example.admin.newsfeedproject.FeedFragments.WeatherFragment;
 import com.example.admin.newsfeedproject.R;
 import com.example.admin.newsfeedproject.FeedFragments.SportFragment;
 
@@ -45,8 +44,7 @@ public class FeedFragment extends Fragment {
     private void setupTabIcons() {
         tabLayout.getTabAt(0).setIcon(R.drawable.news_icon_select);
         tabLayout.getTabAt(1).setIcon(R.drawable.sport_icon_select);
-        tabLayout.getTabAt(2).setIcon(R.drawable.weather_icon_select);
-        tabLayout.getTabAt(3).setIcon(R.drawable.art_icon_select);
+        tabLayout.getTabAt(2).setIcon(R.drawable.art_icon_select);
 
 
 
@@ -56,7 +54,6 @@ public class FeedFragment extends Fragment {
         FeedPagerAdapter adapter = new FeedPagerAdapter(getChildFragmentManager());
         adapter.addFragment(new PoliticalFragment(), "Political");
         adapter.addFragment(new SportFragment(), "Sport");
-        adapter.addFragment(new WeatherFragment(), "Weather");
         adapter.addFragment(new ArtFragment(), "Culture");
         viewPager.setAdapter(adapter);
     }

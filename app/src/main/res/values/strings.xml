@@ -138,26 +138,7 @@
         <item>Փարիզում առաջին անգամ կայացած Armenian Europe Music Awards մրցանակաբաշխության «Տարվա լավագույն երգչի» տիտղոսակիր է դարձել Էրիկը:</item>
 
     </string-array>
-    <string-array name="days">
-        <item>Երկուշաբթի</item>
-        <item>Երեքշաբթի</item>
-        <item>Չորեքշաբթի</item>
-        <item>Հինգշաբթի</item>
-        <item>Ուրբաթ</item>
-        <item>Շաբաթ</item>
-        <item>Կիրակի</item>
 
-    </string-array>
-    <string-array name="gradus">
-        <item>+10</item>
-        <item>+5</item>
-        <item>-3</item>
-        <item>-12</item>
-        <item>-9</item>
-        <item>1</item>
-        <item>+7</item>
-
-    </string-array>
     <string name="key">AIzaSyBIvGgHYviCGmsP20DZ33idOFwfSmYPrQM</string>
     <string-array name="videourls">
         <item>JGwWNGJdvx8</item>
