@@ -15,9 +15,7 @@
             android:name=".MainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,12 +29,13 @@
         <activity android:name=".BrowserActvity">
             <intent-filter>
                 <action android:name="ACTION_VIEW" />
+
                 <data android:scheme="http" />
+
                 <category android:name="android.intent.category.DEFAULT" />
-
-
             </intent-filter>
         </activity>
+        <activity android:name=".VideoActivity"></activity>
     </application>
 
 </manifest>
