@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -23,6 +24,7 @@ public class VideoFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private VideoAdapter adapter;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Nullable
     @Override
@@ -32,18 +34,31 @@ public class VideoFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         adapter=new VideoAdapter(setData(),getContext());
         recyclerView.setAdapter(adapter);
+        swipeRefreshLayout=(SwipeRefreshLayout)view.findViewById(R.id.video_swipe_refreshlayout);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                swipeRefreshLayout.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                }, 2000);
+            }
+        });
 
 
         return view;
     }
 
     private List<String> setData() {
+        String[] videourls=getResources().getStringArray(R.array.videourls);
         List<String> list = new ArrayList<>();
-        list.add("JGwWNGJdvx8");
-        list.add("6Mgqbai3fKo");
-        list.add("i9AHJkHqkpw");
-        list.add("papuvlVeZg8");
-        list.add("KHHxrNSlfQ8");
+
+        for (int i = 0; i <10 ; i++) {
+            list.add(videourls[i]);
+        }
+
 
         return list;
     }
