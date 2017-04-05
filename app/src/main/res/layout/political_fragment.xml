@@ -7,7 +7,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:mContext="info.androidhive.gmail.activity.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="@color/colorAccent">
+    android:background="@color/colorPrimary">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"

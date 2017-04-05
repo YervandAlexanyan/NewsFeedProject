@@ -21,6 +21,10 @@ import android.widget.Toast;
 
 import com.example.admin.newsfeedproject.MainActivity;
 import com.example.admin.newsfeedproject.R;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookSdk;
+import com.facebook.FacebookSdkNotInitializedException;
+import com.facebook.share.model.ShareLinkContent;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -45,7 +49,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
     @Override
     public void onBindViewHolder(final NewsViewHolder holder, int position) {
         final News news = newsList.get(position);
-        Picasso.with(context).load(news.getImage()).resize(130, 130).into(holder.photo);
+        Picasso.with(context).load(news.getImage()).fit().into(holder.photo);
         holder.name.setText(news.getName());
         holder.title.setText(news.getTitle());
         holder.source.setText(news.getSource());
@@ -88,7 +92,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
 
         private ImageView photo;
         private TextView name, title,source;
-        private ImageView favorite;
+        private ImageView favorite,share;
 
 
         public NewsViewHolder(View itemView) {
@@ -98,6 +102,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
             title = (TextView) itemView.findViewById(R.id.title);
             source=(TextView)itemView.findViewById(R.id.source);
             favorite=(ImageView)itemView.findViewById(R.id.favortie);
+
         }
 
     }

@@ -35,7 +35,7 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.Mygaller
     @Override
     public void onBindViewHolder(Mygalleryholder holder, final int position) {
 
-        Picasso.with(context).load(gallerydatalist.get(position)).resize(200,200).into(holder.galleryitem);
+        Picasso.with(context).load(gallerydatalist.get(position)).fit().into(holder.galleryitem);
         holder.galleryitem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

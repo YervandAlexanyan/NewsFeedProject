@@ -41,7 +41,7 @@ public class VideoActivity extends YouTubeBaseActivity implements YouTubePlayer.
 
     @Override
     public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
-        Toast.makeText(this, "Erro" + youTubeInitializationResult.toString(), Toast.LENGTH_LONG)
+        Toast.makeText(this, "Error" + youTubeInitializationResult.toString(), Toast.LENGTH_LONG)
                 .show();
     }
 }
