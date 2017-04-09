@@ -56,14 +56,14 @@ public class SportFragment extends Fragment {
         String[] titles = getResources().getStringArray(R.array.sporttitles);
 
 
-        newsList.add(new News(urls[0], R.drawable.sprotnews1, names[0], sources[0], titles[0]));
-        newsList.add(new News(urls[1], R.drawable.sprotnews2, names[1], sources[1], titles[1]));
-        newsList.add(new News(urls[2], R.drawable.sprotnews3, names[2], sources[2], titles[2]));
-        newsList.add(new News(urls[3], R.drawable.sportnews4, names[3], sources[3], titles[3]));
-        newsList.add(new News(urls[4], R.drawable.sportnews5, names[4], sources[4], titles[4]));
-        newsList.add(new News(urls[5], R.drawable.sportnews6, names[5], sources[5], titles[5]));
-        newsList.add(new News(urls[6], R.drawable.sprotnews7, names[6], sources[6], titles[6]));
-        newsList.add(new News(urls[7], R.drawable.sportnews8, names[7], sources[7], titles[7]));
+        newsList.add(new News(urls[0], R.drawable.sprotnews1, names[0], sources[0], titles[0],false));
+        newsList.add(new News(urls[1], R.drawable.sprotnews2, names[1], sources[1], titles[1],false));
+        newsList.add(new News(urls[2], R.drawable.sprotnews3, names[2], sources[2], titles[2],false));
+        newsList.add(new News(urls[3], R.drawable.sportnews4, names[3], sources[3], titles[3],false));
+        newsList.add(new News(urls[4], R.drawable.sportnews5, names[4], sources[4], titles[4],false));
+        newsList.add(new News(urls[5], R.drawable.sportnews6, names[5], sources[5], titles[5],false));
+        newsList.add(new News(urls[6], R.drawable.sprotnews7, names[6], sources[6], titles[6],false));
+        newsList.add(new News(urls[7], R.drawable.sportnews8, names[7], sources[7], titles[7],false));
         long seed=System.nanoTime();
         Collections.shuffle(newsList,new Random(seed));
         return newsList;

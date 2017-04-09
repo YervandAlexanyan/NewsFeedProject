@@ -8,13 +8,24 @@ public class News {
     private String source;
     private String title;
     private String url;
+    private boolean favorite;
 
-    public News(String url,int image, String name, String source,String title) {
+    public News(String url,int image, String name, String source,String title,boolean favorite) {
+
         this.url=url;
         this.image = image;
         this.name = name;
         this.source = source;
         this.title=title;
+        this.favorite=favorite;
+    }
+
+    public boolean isFavorite() {
+        return favorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.favorite = favorite;
     }
 
     public String getUrl() {

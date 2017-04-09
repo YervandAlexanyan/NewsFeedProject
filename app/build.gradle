@@ -35,5 +35,6 @@ dependencies {
     compile 'com.github.liuguangqiang.swipeback:library:1.0.2@aar'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.facebook.android:facebook-android-sdk:4.+'
+    compile 'com.google.code.gson:gson:2.6.1'
     testCompile 'junit:junit:4.12'
 }
