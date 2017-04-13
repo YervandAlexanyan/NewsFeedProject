@@ -11,24 +11,21 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
 import com.example.admin.newsfeedproject.R;
 import com.squareup.picasso.Picasso;
-
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder> {
     private List<News> newsList;
     private Context context;
-    private List<News> favoriteList;
+
 
 
     public FeedAdapter(List<News> newsList, Context context) {
         this.newsList = newsList;
         this.context = context;
-        this.favoriteList=new ArrayList<>();
+
     }
 
 
@@ -51,7 +48,7 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
         holder.source.setText(news.getSource());
 
 
-        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+        holder.name.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -68,13 +65,14 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
         return newsList.size();
     }
 
-    class NewsViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    class NewsViewHolder extends RecyclerView.ViewHolder  {
 
         private ImageView photo;
         private TextView name, title, source;
-        private ImageView favorite;
-        private RelativeLayout relativeLayout;
+
+
         private boolean toggle = false;
+
 
         public NewsViewHolder(View itemView) {
             super(itemView);
@@ -82,29 +80,12 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder
             name = (TextView) itemView.findViewById(R.id.name);
             title = (TextView) itemView.findViewById(R.id.title);
             source = (TextView) itemView.findViewById(R.id.source);
-            favorite = (ImageView) itemView.findViewById(R.id.favortie);
-            relativeLayout = (RelativeLayout) itemView.findViewById(R.id.relative_layout);
-            favorite.setOnClickListener(this);
+
+
         }
 
 
-        @Override
-        public void onClick(View v) {
 
-            if (toggle) {
-                favorite.setBackgroundResource(R.drawable.ic_favorite_border_black_24dp);
-
-                toggle = false;
-
-
-            } else {
-                favorite.setBackgroundResource(R.drawable.favorite_two);
-
-                toggle = true;
-
-
-            }
-        }
     }
 
 

@@ -11,31 +11,17 @@ import com.liuguangqiang.swipeback.SwipeBackLayout;
 import com.squareup.picasso.Picasso;
 
 public class GalleryActivity extends SwipeBackActivity {
-private ImageView imageView,favorite;
+    private ImageView imageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
-        imageView=(ImageView)findViewById(R.id.image_item);
+        imageView = (ImageView) findViewById(R.id.image_item);
         setDragEdge(SwipeBackLayout.DragEdge.LEFT);
-        Intent intent=getIntent();
-        Picasso.with(getApplicationContext()).load(intent.getIntExtra("key",1)).fit().into(imageView);
-        favorite=(ImageView)findViewById(R.id.gallery_favorite);
-        favorite.setOnClickListener(new View.OnClickListener() {
-            private boolean toogle=false;
-            @Override
-            public void onClick(View v) {
-                if(toogle)
-                {
-                    favorite.setBackgroundResource(R.drawable.ic_favorite_border_black_24dp);
-                    toogle=false;
-                }else
-                {
-                    favorite.setBackgroundResource(R.drawable.favorite_two);
-                    toogle=true;
-                }
+        Intent intent = getIntent();
+        Picasso.with(getApplicationContext()).load(intent.getIntExtra("key", 1)).fit().into(imageView);
 
-            }
-        });
+
     }
 }

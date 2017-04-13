@@ -13,7 +13,6 @@ import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
 
-import com.example.admin.newsfeedproject.DrawerFragments.FavoriteFragment;
 import com.example.admin.newsfeedproject.DrawerFragments.FeedFragment;
 import com.example.admin.newsfeedproject.DrawerFragments.GalleryFragment;
 
@@ -78,9 +77,7 @@ public class MainActivity extends AppCompatActivity
             case R.id.nav_video:
                 fragment=new VideoFragment();
                 break;
-            case R.id.nav_favorite:
-                fragment=new FavoriteFragment();
-                break;
+
 
         }
 
