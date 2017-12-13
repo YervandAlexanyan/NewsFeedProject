@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.DrawerFragments;
+package com.example.admin.newsfeedproject.drawerfragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.example.admin.newsfeedproject.FeedRecylerView.VideoAdapter;
+import com.example.admin.newsfeedproject.feedrecylerView.VideoAdapter;
 import com.example.admin.newsfeedproject.R;
 
 import java.util.ArrayList;

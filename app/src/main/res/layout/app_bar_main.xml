@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.admin.newsfeedproject.MainActivity">
+    tools:context="com.example.admin.newsfeedproject.activities.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
 <fragment
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:name="com.example.admin.newsfeedproject.DrawerFragments.FeedFragment"/>
+    android:name="com.example.admin.newsfeedproject.drawerfragments.FeedFragment"/>
     </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

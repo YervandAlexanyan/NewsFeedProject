@@ -1,9 +1,11 @@
-package com.example.admin.newsfeedproject;
+package com.example.admin.newsfeedproject.activities;
 
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebView;
+
+import com.example.admin.newsfeedproject.R;
 
 public class BrowserActvity extends AppCompatActivity {
 

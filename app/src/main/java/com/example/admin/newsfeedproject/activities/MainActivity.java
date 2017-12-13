@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject;
+package com.example.admin.newsfeedproject.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,10 +13,11 @@ import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
 
-import com.example.admin.newsfeedproject.DrawerFragments.FeedFragment;
-import com.example.admin.newsfeedproject.DrawerFragments.GalleryFragment;
+import com.example.admin.newsfeedproject.R;
+import com.example.admin.newsfeedproject.drawerfragments.FeedFragment;
+import com.example.admin.newsfeedproject.drawerfragments.GalleryFragment;
 
-import com.example.admin.newsfeedproject.DrawerFragments.VideoFragment;
+import com.example.admin.newsfeedproject.drawerfragments.VideoFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.FeedRecylerView;
+package com.example.admin.newsfeedproject.feedrecylerView;
 
 
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 import com.example.admin.newsfeedproject.R;
-import com.example.admin.newsfeedproject.VideoActivity;
+import com.example.admin.newsfeedproject.activities.VideoActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubeThumbnailLoader;
 import com.google.android.youtube.player.YouTubeThumbnailView;

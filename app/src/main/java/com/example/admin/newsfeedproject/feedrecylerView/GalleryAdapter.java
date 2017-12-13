@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.FeedRecylerView;
+package com.example.admin.newsfeedproject.feedrecylerView;
 
 
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.admin.newsfeedproject.GalleryActivity;
+import com.example.admin.newsfeedproject.activities.GalleryActivity;
 import com.example.admin.newsfeedproject.R;
 import com.squareup.picasso.Picasso;
 

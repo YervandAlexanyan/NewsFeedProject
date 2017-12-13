@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.FeedRecylerView;
+package com.example.admin.newsfeedproject.feedrecylerView;
 
 
 

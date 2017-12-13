@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.DrawerFragments;
+package com.example.admin.newsfeedproject.drawerfragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -11,10 +11,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.admin.newsfeedproject.FeedFragments.ArtFragment;
-import com.example.admin.newsfeedproject.FeedFragments.PoliticalFragment;
+import com.example.admin.newsfeedproject.feedfragments.ArtFragment;
+import com.example.admin.newsfeedproject.feedfragments.PoliticalFragment;
 import com.example.admin.newsfeedproject.R;
-import com.example.admin.newsfeedproject.FeedFragments.SportFragment;
+import com.example.admin.newsfeedproject.feedfragments.SportFragment;
 
 
 import java.util.ArrayList;

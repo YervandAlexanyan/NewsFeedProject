@@ -1,23 +1,17 @@
-package com.example.admin.newsfeedproject.DrawerFragments;
+package com.example.admin.newsfeedproject.drawerfragments;
 
-import android.content.Context;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.GestureDetector;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 
-import com.example.admin.newsfeedproject.FeedRecylerView.GalleryAdapter;
+import com.example.admin.newsfeedproject.feedrecylerView.GalleryAdapter;
 import com.example.admin.newsfeedproject.R;
 
 import java.util.ArrayList;

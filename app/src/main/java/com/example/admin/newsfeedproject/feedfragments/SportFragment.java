@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.FeedFragments;
+package com.example.admin.newsfeedproject.feedfragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -10,12 +10,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.admin.newsfeedproject.FeedRecylerView.FeedAdapter;
-import com.example.admin.newsfeedproject.FeedRecylerView.News;
+import com.example.admin.newsfeedproject.feedrecylerView.FeedAdapter;
+import com.example.admin.newsfeedproject.feedrecylerView.News;
 import com.example.admin.newsfeedproject.R;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;

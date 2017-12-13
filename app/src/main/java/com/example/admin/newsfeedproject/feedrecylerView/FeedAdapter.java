@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject.FeedRecylerView;
+package com.example.admin.newsfeedproject.feedrecylerView;
 
 
 import android.content.Context;
@@ -9,11 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.example.admin.newsfeedproject.R;
 import com.squareup.picasso.Picasso;
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.NewsViewHolder> {

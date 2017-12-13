@@ -1,4 +1,4 @@
-package com.example.admin.newsfeedproject;
+package com.example.admin.newsfeedproject.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +8,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
+
+import com.example.admin.newsfeedproject.R;
 
 public class SplashScreen extends AppCompatActivity {
     private ProgressBar progressBar;
